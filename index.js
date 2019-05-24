@@ -47,7 +47,8 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   if (cart.includes(item)) {
-    
+    var itemIndex = cart.findIndex(item);
+    cart.splice(itemIndex,1);
   }
 }
 
